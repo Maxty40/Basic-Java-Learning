@@ -29,16 +29,16 @@ public class Nilai {
             case 'A':
                 predikat = "Memuaskan";
                 break;
-            case 'B' :
+            case 'B':
                 predikat = "Baik";
                 break;
-            case 'C' :
+            case 'C':
                 predikat = "Cukup";
                 break;
-            case 'D' :
+            case 'D':
                 predikat = "Kurang";
                 break;
-            case 'E' :
+            case 'E':
                 predikat = "Sangat Kurang";
                 break;
             default:
