@@ -11,7 +11,7 @@ public class PemainBola {
         };
         System.out.println("Daftar Pemain Bola Dunia:");
         for (int i = 0; i < Pemain.length; i++) {
-            System.out.println(Pemain[i][0] + "\t: " + Pemain[i][1]); 
+            System.out.println("Pemain: " + Pemain[i][0] + ", Negara: " + Pemain[i][1]); 
         }
     }
 }
