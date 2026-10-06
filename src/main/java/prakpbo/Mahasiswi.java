@@ -1,40 +1,41 @@
 package prakpbo;
 
 public class Mahasiswi {
-    public static class Mahasiswinf {
         // Member 1 
         // Variable/Attribute/Data
+        
+        // Public: Only accessible within the same package or from other packages through inheritance.
+        // Protected: Accessible within the same package and subclasses (even if they are in different packages).
+        // Private: Accessible only within the same class.
+
         public String nama;
-        public int umur;
-        public double nilai;
+        protected int umur;
+        private double nilai;
+        public int nim;
+        public String alamat;
 
         // Member 2 - Constructor
-        public Mahasiswinf(String nama, int umur, double nilai) {
+        public Mahasiswi(String nama, int umur, double nilai, int nim, String alamat) {
             this.nama = nama;
             this.umur = umur;
             this.nilai = nilai;
+            this.nim = nim;
+            this.alamat = alamat;
         }
 
         // Method/Function
         public void tampilData() {
+            System.out.println("-------------------------");
             System.out.println("Nama: " + nama);
             System.out.println("Umur: " + umur);
             System.out.println("Nilai: " + nilai);
+            System.out.println("NIM: " + nim);
+            System.out.println("Alamat: " + alamat);
+            System.out.println("-------------------------");
         }
-    }
 
-    // Object
-    public static void main(String[] args) {
-        // Mahasiswi 1
-        Mahasiswinf mhs1 = new Mahasiswinf("Zihan", 26, 99.9);
-        mhs1.tampilData();
-
-        // Mahasiswi 2
-        Mahasiswinf mhs2 = new Mahasiswinf("Nabila", 21, 88.8);
-        mhs2.tampilData();
-
-        //   Mahasiswi 3
-        Mahasiswinf mhs3 = new Mahasiswinf("Aulia", 20, 77.7);
-        mhs3.tampilData();
-    }
+        // Getter for private member 'nilai'
+        public double getNilai() {
+            return nilai;
+        }
 }
